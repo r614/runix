@@ -1,0 +1,20 @@
+[package]
+name = "runix"
+version = "0.1.0"
+authors = ["Roshan <steradian614@gmail.com>"]
+edition = "2018"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+bootloader = "0.9.8"
+spin = "0.5.2"
+volatile = "0.2.6"
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
